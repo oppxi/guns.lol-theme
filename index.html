@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="mizu.its.moe | mizu.is-a.dev">
+    <meta property="og:title" content="Profile OPPXi">
+    <meta property="og:description" content="OPPXI">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1157617984752328788/1186267633566367824/download.gif">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Owner Source: @OPPXI">
+    <meta property="twitter:title" content="Profile OPPXI">
+    <meta property="twitter:description" content="mizu.its.moe | mizu.is-a.dev">
+    <meta property="twitter:image" content="https://cdn.discordapp.com/attachments/1157617984752328788/1186267633566367824/download.gif">
+    <meta property="twitter:image:alt" content="OPPXiProfile | SLK Community">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="keywords" content="miyagawamizu, mizu, mizumiyagawa, miyagawa, miyagawa mizu">
+    <meta name="language" content="English">
+    <meta name="author" content="MiyagawaMizu">
+    <meta name="view-transition" content="same-origin">
+    <link rel="icon" href="./public/mahiro_flex.ico">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet" crossorigin="">
+    <title>:)</title>
+
+    <style>
+        html,
+        body {
+            cursor: url('./public/cursor.png'), auto;
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .click-effect {
+            position: absolute;
+            background-color: #000000;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            animation: ripple 0.6s linear;
+            transform: scale(0);
+        }
+
+        @keyframes ripple {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        /* Text display and controls */
+        .controls {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+        }
+
+        .status-text,
+        .track-title {
+            font-size: 18px;
+            color: #333;
+            margin-right: 20px;
+        }
+
+        /* Volume slider */
+        .volume-control {
+            width: 200px;
+            margin-right: 10px;
+        }
+    </style>
+
+    <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Disable access to developer tools
+        document.onkeydown = function (e) {
+            if (
+                (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
+                (e.ctrlKey && e.shiftKey && e.keyCode === 67) || // Ctrl+Shift+C
+                (e.ctrlKey && e.shiftKey && e.keyCode === 74) || // Ctrl+Shift+J
+                (e.ctrlKey && e.keyCode === 85)                  // Ctrl+U
+            ) {
+                return false;
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile-border box-color">
+            <div class="profile box-color">
+                <div class="banner">
+                    <img id="banner-image" src="./pngxxx/banner.png" alt="">
+                </div>
+                <div class="main-header">
+                    <div class="image">
+                        <div class="avatar">
+                            <img class="box-color" id="avatar-image" alt="" aria-hidden="true" src="./pngxxx/avatar.jpg">
+                            <img id="avatar-decoration" src="https://cdn.discordapp.com/avatar-decoration-presets/a_d1ea7b8650bf3d64a03304c2ceb7d089.png?size=80&passthrough=true" alt="">
+                        </div>
+                    </div>
+                    <div class="badges box-color" id="badges">
+                        <div class="badges-right">
+                            <a class="tooltip" aria-label="HypeSquad Bravery">
+                                <img alt=" " src="./badges/hypesquad-bravery.svg">
+                            </a>
+                            <a class="tooltip" id="Active Developer" aria-label="Active Developer">
+                                <img alt=" " src="./badges/active-developer.svg">
+                            </a>
+                            <a class="tooltip" aria-label="Subscriber since Oct 4, 2024">
+                                <img alt=" " src="./badges/nitro.svg">
+                            </a>
+                            <a class="tooltip" aria-label="Originally known as O P P X I#4013">
+                                <img alt=" " src="./badges/legacy-username.svg">
+                            </a>
+                            <a class="tooltip" aria-label="Boosted!">
+                                <img alt=" " src="./badges/boost-24-month.svg">
+                            </a>
+                            <a class="tooltip" aria-label="Owner Server Usagi 🌙 Moon">
+                                <img alt=" " src="./badges/crown.gif">
+                            </a>
+                        </div>
+                        <div class="badges-left"></div>
+                    </div>
+                </div>
+                <div class="card box-color">
+                    <div class="name-box">
+                        <span class="display-name">O P P X I</span>
+                        <span class="username">oppxi.jp</span>
+                        <span class="pronouns">​🇨​​🇱​​🇮​​🇨​​🇰​ ​🇦​​🇳​​🇾​​🇼​​🇭​​🇪​​🇷​​🇪​ ​🇹​​🇴​ ​🇵​​🇱​​🇦​​🇾​ , ​🇷​​🇮​​🇬​​🇭​​🇹​ ​🇨​​🇱​​🇮​​🇨​​🇰​ ​🇫​​🇴​​🇷​ ​🇳​​🇪​​🇽​​🇹​ ​🇲​​🇺​​🇸​​🇮​​🇨​❗❗❗</span>
+                        <div class="custom-status">
+                            <img id="custom-status-emoji">
+                            <p class="custom-status-text"></p>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="content">
+                            <div class="about-section">
+                                <div class="title-body">About Me</div>
+                                <span class="About Me">
+                                    Hello, I am OPPXI
+                                    <div class="flag">
+                                        <img src="./icons/Hitori_Gotou.png">
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="title-body">ROLES</div>
+                            <div class="roles-body">
+                                <div class="rol rosepink">
+                                    <i class="fas fa-circle"></i>
+                                    <span>₍⑅ᐢ..ᐢ₎ ・Owner・ˎˊ˗</span>
+                                </div>
+                                <div class="rol softpink">
+                                    <i class="fas fa-circle"></i>
+                                    <span>ʚ﹕Skill Issue﹕⌗</span>
+                                </div>
+                                <div class="rol green">
+                                    <i class="fas fa-circle"></i>
+                                    <span>ʚ﹕Verified﹕⌗</span>
+                                </div>
+                                <div class="rol pink">
+                                    <i class="fas fa-circle"></i>
+                                    <span>ʚ﹕Green Apple﹕⌗</span>
+                                </div>
+                                <div class="rol blue">
+                                    <i class="fas fa-circle"></i>
+                                    <span>ʚ﹕Sweet Lavender﹕⌗</span>
+                                </div>
+                            </div>
+                            <div class="divider social-divider"></div>
+                            <div class="title-body">SOCIAL NETWORK</div>
+                            <div class="socials">
+                                <div class="column">
+                                    <a class="platform" href="#" rel="noreferrer noopener" target="_blank" title="#">
+                                        <img class="platform-icon" alt=" " aria-hidden="true" src="./icons/steam.png">
+                                        <div class="text-base platform-username">Steam</div>
+                                        <div>
+                                            <img alt=" " id="link" aria-hidden="true" src="./icons/link.svg" class="connect">
+                                        </div>
+                                    </a>
+                                    <a class="platform" href="#" rel="noreferrer noopener" target="_blank" title="#">
+                                        <img class="platform-icon" alt=" " aria-hidden="true" src="./icons/youtube.png">
+                                        <div class="text-base platform-username">Youtube</div>
+                                        <div>
+                                            <img alt=" " id="link" aria-hidden="true" src="./icons/link.svg" class="connect">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <a class="platform" href="#" rel="noreferrer noopener" target="_blank" title="#">
+                                        <img class="platform-icon" alt=" " aria-hidden="true" src="./platforms/github.gif">
+                                        <div class="text-base platform-username">Github</div>
+                                        <div>
+                                            <img alt=" " id="link" aria-hidden="true" src="./icons/link.svg" class="connect">
+                                        </div>
+                                    </a>
+                                    <a class="platform" href="#" rel="noreferrer noopener" target="_blank" title="#">
+                                        <img class="platform-icon" alt=" " aria-hidden="true" src="./platforms/discord.svg">
+                                        <div class="text-base platform-username">Discord Server</div>
+                                        <div>
+                                            <img alt=" " id="link" aria-hidden="true" src="./icons/link.svg" class="connect">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="chat-container">
+                                <input type="text" id="message-input" placeholder="Message @Mizu">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <span class="status-text" id="status-text">Stopped</span>
+        <span class="track-title" id="track-title">No track playing</span>
+        <input type="range" id="volume-control" class="volume-control" min="0" max="1" step="0.01" value="1">
+    </div>
+
+    <div id="timer" class="status-text">00:00</div> <!-- Timer Display -->
+
+    <script>
+        // Initialize audio files with titles
+        const tracks = [
+            { file: './music/consume.mp3', title: './music/consume' }, // First track
+            { file: './music/ineedsomeone.mp3', title: './music/ineedsomeone' }, // Next track
+            { file: './music/Comme en enfer.mp3', title: './music/commeenenfer' }, // Next track
+            { file: './music/Le bruit des âmes.mp3', title: './music/lebruitdesâmes' }, // Next track
+            { file: './music/Pensées.mp3', title: './music/Pensées' }, // Next track
+        ];
+
+        let currentTrackIndex = 0; // Keep track of the current track
+        let audio = new Audio(tracks[currentTrackIndex].file);
+        audio.loop = true; // Set audio to loop
+
+        // Update timer display every second
+        setInterval(function () {
+            if (!audio.paused) {
+                let currentTime = Math.floor(audio.currentTime);
+                let minutes = String(Math.floor(currentTime / 60)).padStart(2, '0');
+                let seconds = String(currentTime % 60).padStart(2, '0');
+                document.getElementById('timer').textContent = `${minutes}:${seconds}`;
+            }
+        }, 1000);
+
+        // Click anywhere to play/pause functionality
+        document.body.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play()
+                    .then(() => {
+                        document.getElementById('status-text').textContent = 'Playing'; // Update status text to "Playing"
+                        document.getElementById('track-title').textContent = `Now Playing: ${tracks[currentTrackIndex].title}`; // Update track title
+                        console.log('Audio playing'); // Log for confirmation
+                    }).catch((error) => {
+                        console.log("Audio playback failed:", error);
+                    });
+            } else {
+                audio.pause();
+                document.getElementById('status-text').textContent = 'Stopped'; // Update status text to "Stopped"
+                document.getElementById('track-title').textContent = `No track playing`; // Reset track title
+                console.log('Audio paused'); // Log for confirmation
+            }
+        });
+
+        // Right-click to skip to the next track
+        document.body.addEventListener('contextmenu', function (event) {
+            event.preventDefault(); // Prevent the default context menu from appearing
+            nextTrack();
+        });
+
+        function nextTrack() {
+            currentTrackIndex = (currentTrackIndex + 1) % tracks.length; // Move to the next track
+            audio.src = tracks[currentTrackIndex].file; // Change audio source to the next track
+            audio.play(); // Play the new track
+            document.getElementById('status-text').textContent = 'Playing'; // Update status text to "Playing"
+            document.getElementById('track-title').textContent = `Now Playing: ${tracks[currentTrackIndex].title}`; // Update track title
+            console.log('Next track playing:', tracks[currentTrackIndex].file);
+        }
+
+        // Volume control functionality
+        document.getElementById('volume-control').addEventListener('input', function () {
+            audio.volume = this.value; // Set audio volume based on range input
+        });
+
+        // Click effect for ripple animation (optional)
+        document.body.addEventListener('click', function (event) {
+            createRippleEffect(event);
+        });
+
+        function createRippleEffect(event) {
+            const ripple = document.createElement('div');
+            ripple.className = 'click-effect';
+
+            const x = event.clientX;
+            const y = event.clientY;
+
+            ripple.style.left = `${x}px`;
+            ripple.style.top = `${y}px`;
+
+            document.body.appendChild(ripple);
+
+            // Remove the ripple after the animation ends
+            ripple.addEventListener('animationend', () => {
+                ripple.remove();
+            });
+        }
+    </script>
+
+    <div id="extension-kjloo"></div>
+</body>
+
+</html>
